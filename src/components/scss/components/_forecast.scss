@@ -1,0 +1,70 @@
+.forecast {
+
+    .accordion__item {
+        margin-block-start: calc(var(--gap)/2);
+    }
+
+    .daily-item {
+        box-shadow: 0 0 1rem 0.5rem rgba(0,0,0,0.25);
+        background: var(--color-3);
+        color: var(--color-1);
+        border-radius: var(--border-radius);
+        margin: 0;
+        padding: calc(var(--gap)/2);
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: var(--gap);
+        font-size: var(--font-size); 
+        text-align: left;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        .icon-small {
+            flex: 0 1 auto;
+            padding: 0.25rem;
+            margin: 0;
+            background: var(--color-4);
+            border-radius: 100%;
+            width: 2rem;
+            height: 2rem;
+            cursor: inherit;
+            picture {
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .date-time {
+            flex: 1 1 auto;;
+            cursor: inherit;
+            text-transform: none;
+        }
+
+        .description {
+            flex: 1 1 auto;
+            text-align: right;
+            cursor: inherit;
+        }
+
+        .high-low {
+            flex: 0 1 auto;
+            cursor: inherit;
+        }
+    }
+
+    .daily-details-grid {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-start;
+        gap: calc(var(--gap)/2);
+        
+        .daily-details-grid-item {
+            flex: 1 1 auto;
+            text-align: left;
+            padding: 1rem 1.5rem 0.5rem 1.5rem;
+        }
+    }
+}
