@@ -14,7 +14,7 @@ const Forecast = ({ data }) => {
                             <AccordionItemButton>
                                 <div className="daily-item">
                                     <figure className="icon-small">
-                                        <picture><img src={`img/${item.weather[0].icon}.png`} alt="Weather Icon" /></picture>
+                                        <picture><img src={`dist/img/${item.weather[0].icon}.png`} alt="Weather Icon" /></picture>
                                     </figure>
                                     <label className="date-time"><strong>{moment(item.dt_txt).format('dd, M/D')}</strong> at <strong>{moment(item.dt_txt).format('h:mm a')}</strong></label>
                                     <label className="description"><strong>{item.weather[0].description}</strong></label>
