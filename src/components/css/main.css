@@ -447,18 +447,16 @@ section {
   display: flex;
   justify-content: space-between;
   color: var(--color-1);
+  font-size: clamp(var(--font-size) * 0.75, 2vw, var(--font-size) * 1);
+  line-height: 1.5;
 }
 .weather .bottom .parameter-row .parameter-label {
   text-align: left;
-  font-size: var(--font-size);
   font-weight: 400;
-  line-height: 1.5;
 }
 .weather .bottom .parameter-row .parameter-value {
   text-align: right;
-  font-size: var(--font-size);
   font-weight: 600;
-  line-height: 1.5;
 }
 
 .forecast .accordion__item {
