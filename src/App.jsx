@@ -1,4 +1,5 @@
 import './components/css/main.css'
+import Header from './components/header/header';
 import Search from './components/search/Search'
 import CurrentWeather from './components/current-weather/current-weather';
 import Forecast from './components/forecast/forecast';
