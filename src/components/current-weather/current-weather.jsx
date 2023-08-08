@@ -12,7 +12,7 @@ const CurrentWeather = ({ data }) => {
 
                 <figure className="icon">
                     <picture>
-                        <img alt={`${data.weather[0].description} icon`} src={`../../../dist/img/${data.weather[0].icon}.png`} />
+                        <img alt={`${data.weather[0].description} icon`} src={`img/${data.weather[0].icon}.png`} />
                     </picture>
                 </figure>
             </article>
