@@ -1,3 +1,9 @@
+// breakpoints 
+$bp-sm: 37.5rem;   // 600px
+$bp-md: 50rem;     // 800px
+$bp-lg: 62.5rem;   // 1000px
+$bp-xl: 75rem;     // 1200px
+
 :root {
     --font-family: 'Noto Sans', sans-serif;
     --font-size: 1rem;
@@ -9,5 +15,4 @@
     --color-2:#ff6000; // #FF6000
     --color-3:#ffa559; // #FFA559 
     --color-4:#ffe6c7; // #ffe6c7
-
 }

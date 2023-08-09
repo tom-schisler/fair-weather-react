@@ -513,11 +513,19 @@ section {
 .forecast .daily-details-grid {
   flex: 1 1 auto;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: flex-start;
-  gap: calc(var(--gap) / 2);
+  gap: 0;
+}
+@media (width >= 50rem) {
+  .forecast .daily-details-grid {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: calc(var(--gap) / 2);
+  }
 }
 .forecast .daily-details-grid .daily-details-grid-item {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   text-align: left;
   padding: 1rem 1.5rem 0.5rem 1.5rem;
 }

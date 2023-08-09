@@ -16,7 +16,7 @@ const Forecast = ({ data }) => {
                                     <figure className="icon-small">
                                         <picture><img src={`img/${item.weather[0].icon}.png`} alt={`${item.weather[0].description} icon`} /></picture>
                                     </figure>
-                                    <label className="date-time"><strong>{moment(item.dt_txt).format('dd, M/D')}</strong> at <strong>{moment(item.dt_txt).format('h:mm a')}</strong></label>
+                                    <label className="date-time"><strong>{moment(item.dt_txt).format('ddd, M/D')}</strong> at <strong>{moment(item.dt_txt).format('h:mm a')}</strong></label>
                                     <label className="description"><strong>{item.weather[0].description}</strong></label>
                                     <label className="high-low">High: <strong>{Math.round(item.main.temp_max)}°F</strong> / Low: <strong>{Math.round(item.main.temp_min)}°F</strong></label>
                                 </div>
