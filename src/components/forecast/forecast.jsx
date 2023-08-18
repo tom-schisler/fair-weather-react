@@ -16,25 +16,25 @@ const Forecast = ({ data }) => {
                                     <figure className="icon-small">
                                         <picture><img src={`img/${item.weather[0].icon}.png`} alt={`${item.weather[0].description} icon`} /></picture>
                                     </figure>
-                                    <label className="date-time"><strong>{moment(item.dt_txt).format('ddd, M/D')}</strong> at <strong>{moment(item.dt_txt).format('h:mm a')}</strong></label>
-                                    <label className="description"><strong>{item.weather[0].description}</strong></label>
-                                    <label className="high-low">High: <strong>{Math.round(item.main.temp_max)}°F</strong> / Low: <strong>{Math.round(item.main.temp_min)}°F</strong></label>
+                                    <span className="date-time"><strong>{moment(item.dt_txt).format('ddd, M/D')}</strong> at <strong>{moment(item.dt_txt).format('h:mm a')}</strong></span>
+                                    <span className="description"><strong>{item.weather[0].description}</strong></span>
+                                    <span className="high-low">High: <strong>{Math.round(item.main.temp_max)}°F</strong> / Low: <strong>{Math.round(item.main.temp_min)}°F</strong></span>
                                 </div>
                             </AccordionItemButton>
                         </AccordionItemHeading>
                         <AccordionItemPanel>
                             <div className="daily-details-grid">
                                 <div className="daily-details-grid-item">
-                                    <label className="label">Humidity: </label> 
-                                    <label className="info"><strong>{item.main.humidity}%</strong></label>
+                                    <span className="span">Humidity: </span> 
+                                    <span className="info"><strong>{item.main.humidity}%</strong></span>
                                 </div>
                                 <div className="daily-details-grid-item">
-                                    <label className="label">Feels like: </label> 
-                                    <label className="info"><strong>{Math.round(item.main.feels_like)}°F</strong></label>
+                                    <span className="span">Feels like: </span> 
+                                    <span className="info"><strong>{Math.round(item.main.feels_like)}°F</strong></span>
                                 </div>
                                 <div className="daily-details-grid-item">
-                                    <label className="label">Wind speed: </label> 
-                                    <label className="info"><strong>{Math.round(item.wind.speed)} mph</strong></label>
+                                    <span className="span">Wind speed: </span> 
+                                    <span className="info"><strong>{Math.round(item.wind.speed)} mph</strong></span>
                                 </div>
                             </div>
                         </AccordionItemPanel>
