@@ -34,7 +34,7 @@ const Search = ({ onSearchChange }) => {
 
     return (
         <section className="search-form">
-            <label htmlFor='search'>Search by City</label>
+            <label htmlFor='react-select-2-input'>Search by City</label>
             <AsyncPaginate
                 placeholder="Search by City"
                 debounceTimeout={600}
